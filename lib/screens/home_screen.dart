@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:skype_clone/screens/pageviews/chat_Screen.dart';
 import 'package:skype_clone/utils/universal_variables.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -35,11 +36,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: UniversalVariables.blackColor,
       body: PageView(
-      physics: NeverScrollableScrollPhysics(),
+        physics: NeverScrollableScrollPhysics(),
         onPageChanged: onPageChanged,
         controller: pageController,
         children: [
-          Center(child: Text("Chat List Screen")),
+          Container(child: ChatScreen()),
           Center(child: Text("Call Logs Screen")),
           Center(child: Text("Contact Screen")),
         ],

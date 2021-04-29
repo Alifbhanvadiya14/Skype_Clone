@@ -33,6 +33,8 @@ dependencies:
   google_sign_in:
   permission_handler:
   shimmer:
+  firebase_core:
+  gradient_app_bar:
 
 dev_dependencies:
   flutter_test:
